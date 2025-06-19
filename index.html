@@ -3,47 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AUGURS 留学服务</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>AUGURS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #002B5C;
+    }
+    header {
+      background-color: #002B5C;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img.logo {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background-color: #002B5C;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .banner p {
+      font-size: 24px;
+      line-height: 1.6;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 60px 0;
+      padding: 0 20px;
+    }
+    .service-item {
+      flex: 0 1 300px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      margin: 10px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .service-item h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #002B5C;
+    }
+    footer {
+      background-color: #f0f0f0;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="images/logo.jpg" alt="AUGURS Logo">
-      <h1>AUGURS 留学</h1>
-    </div>
+    <img src="/mnt/data/10571750330868_.pic_hd.jpg" alt="AUGURS Logo" class="logo">
     <nav>
-      <ul>
-        <li><a href="#">首页</a></li>
-        <li><a href="#">关于我们</a></li>
-        <li class="dropdown">
-          <a href="#">服务项目</a>
-          <div class="dropdown-content">
-            <a href="#">本科/硕士申请</a>
-            <a href="#">紧急申诉</a>
-            <a href="#">线上线下辅导</a>
-          </div>
-        </li>
-        <li><a href="#">成功案例</a></li>
-        <li><a href="#">联系我们</a></li>
-      </ul>
-      <div class="language-switch">
-        <button>中文</button>
-        <button>English</button>
-      </div>
+      <a href="#">首页</a>
+      <a href="#">关于我们</a>
+      <a href="#">服务项目</a>
+      <a href="#">成功案例</a>
+      <a href="#">联系我们</a>
     </nav>
   </header>
-  <main>
-    <section class="hero">
-      <h2>Opening Doors to Global Education</h2>
-      <p>我们自2018年创立以来，已帮助超过3000名学生实现留学梦想</p>
-    </section>
-  </main>
+
+  <div class="banner">
+    <h1>让每一位学生，走进理想的世界名校</h1>
+    <p>8年留学服务经验｜3000+真实案例｜全球导师一对一辅导</p>
+  </div>
+
+  <section class="services">
+    <div class="service-item">
+      <h3>紧急申诉</h3>
+      <p>快速响应学术危机，提升成功率，守住你的学业底线。</p>
+    </div>
+    <div class="service-item">
+      <h3>本科 / 硕士申请</h3>
+      <p>量身定制申请方案，助你圆梦名校。</p>
+    </div>
+    <div class="service-item">
+      <h3>线上 / 线下辅导</h3>
+      <p>全球导师网络，学术与语言全面提升。</p>
+    </div>
+  </section>
+
   <footer>
-    <p>电话：021-50722996 | 微信：zhichengedu2018</p>
-    <p>美国地址：1300 Old Bayshore Hwy, San Jose, CA 95122</p>
-    <p>上海地址：上海松江区明南路85号</p>
-    <p>&copy; 2025 AUGURS 留学服务</p>
+    © 2025 AUGURS | 上海 | 微信 / 邮箱：请填写 | 备案信息如有请补充
   </footer>
 </body>
 </html>
