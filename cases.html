@@ -35,7 +35,7 @@
     }
 
     .cases-section {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 80px auto;
       padding: 40px;
       background: #f4f6f8;
@@ -60,15 +60,15 @@
     }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr); /* 每行固定三张图片 */
+      gap: 30px;
       justify-items: center;
     }
     .grid-container img {
       width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 360px; /* 放大图片 */
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
     }
 
     footer {
@@ -78,6 +78,18 @@
       padding: 30px 20px;
       font-size: 14px;
       margin-top: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 平板每行两张 */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* 手机每行一张 */
+      }
     }
   </style>
 </head>
