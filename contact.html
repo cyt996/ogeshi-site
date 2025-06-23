@@ -2,20 +2,142 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>联系我们 - Ogeshi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>联系我们 - AUGURS</title>
   <style>
-    body { font-family: 'Inter', sans-serif; padding: 40px; max-width: 800px; margin: auto; }
-    h1 { color: #1d4ed8; }
-    p { font-size: 16px; color: #374151; line-height: 1.7; }
-    a { color: #1d4ed8; text-decoration: none; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #002B5C;
+    }
+    header {
+      background: linear-gradient(90deg, #002B5C 0%, #003C77 100%);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    header img.logo {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #D4AF37;
+    }
+
+    .contact-section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 40px;
+      background: #f4f6f8;
+      border-left: 6px solid #002B5C;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      color: #002B5C;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      margin: 10px auto 0;
+      width: 60px;
+      height: 3px;
+      background-color: #D4AF37;
+    }
+
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 260px;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .qr-codes {
+      flex: 1;
+      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .qr-codes img {
+      width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #f0f0f0;
+      color: #666;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
-  <h1>联系我们</h1>
-  <p>如果你正在寻找专业、可信赖、响应快速的留学合作伙伴，欢迎随时联系我们：<br>Email: info@ogeshi.com<br>电话：021-50722996<br>微信：请添加客服微信获取更多信息</p>
-  <br><br>
-  <a href="index.html">返回首页</a>
+
+  <header>
+    <img src="/logo.jpg" alt="AUGURS Logo" class="logo">
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="services.html">服务项目</a>
+      <a href="cases.html">成功案例</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2 class="section-title">联系我们</h2>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <p><strong>电话：</strong>021-50722996</p>
+        <p><strong>微信：</strong>zhichengedu2018</p>
+        <p><strong>小红书：</strong>5373871203</p>
+        <p><strong>办公地址：</strong>上海 · 旧金山 · 青岛</p>
+        <p><strong>服务时间：</strong>全年 7×12 小时（9:00 - 21:00）</p>
+      </div>
+      <div class="qr-codes">
+        <div>
+          <p style="text-align:center; font-size:16px; margin-bottom: 10px;">微信二维码</p>
+          <img src="二维码1.jpg" alt="微信二维码">
+        </div>
+        <div>
+          <p style="text-align:center; font-size:16px; margin-bottom: 10px;">小红书二维码</p>
+          <img src="二维码2.jpg" alt="小红书二维码">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 AUGURS | 上海 | 微信 / 邮箱：请填写 | 备案信息如有请补充
+  </footer>
+
 </body>
 </html>
